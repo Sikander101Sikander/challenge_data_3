@@ -1,0 +1,36 @@
+// SPDX-License-Identifier: MIT
+pragma solidity ^0.7.0;
+contract arithmetic
+{
+    uint firstno;
+    uint secondno;
+    function firstnoSet(uint s) public
+     {
+      firstno=s;
+    }
+
+    function secondnoSet(uint g) public
+     {
+      secondno=g;
+    }
+function add() view public returns (uint)
+{
+    uint sum=firstno+secondno;
+    return sum;
+}
+function subtract() view public returns (uint)
+{
+    uint sub=firstno-secondno;
+    return sub;
+}
+function multiply() view public returns (uint)
+{
+    uint multi=firstno*secondno;
+    return multi;
+}
+function divide() view public returns (uint)
+{
+    uint div=firstno/secondno;
+    return div;
+}
+}
